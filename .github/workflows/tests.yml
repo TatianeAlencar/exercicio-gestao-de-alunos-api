@@ -2,10 +2,14 @@ name: Testes de API
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: 
+    - main
+    - ci/github-actions
 
+  pull_request:
+    branches: 
+    - main
+    
 jobs:
   test:
     runs-on: ubuntu-latest
